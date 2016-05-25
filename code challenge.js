@@ -26,8 +26,9 @@ function factorial(num) {
 }
 //recursive solution
 function factorial_rec(num) {
-    if (num > 1) {
-        var num = num * factorial_rec(num - 1);
+    if (num <= 1) {
+        return 1;
+    } else {
+        return num * factorial_rec(num - 1);
     }
-    return num;
 }
